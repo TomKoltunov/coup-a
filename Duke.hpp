@@ -13,9 +13,8 @@ namespace coup
             Player player;
 
         public:
-            Duke(Game game, string name);
-            void takeThreeCoins();
-            
+            Duke(Game& game, string name);
+            void tax();
+            void block(Player& player);
     };
-
 }

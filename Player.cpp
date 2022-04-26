@@ -6,10 +6,10 @@ using namespace std;
 
 namespace coup
 {
-    Player::Player(Game game, string name)
-    {
+    // Player::Player(Game& game, string name)
+    // {
 
-    }
+    // }
 
     void income()
     {
@@ -28,11 +28,11 @@ namespace coup
 
     string role(Player& player)
     {
-
+        return " ";
     }
 
     int coins()
     {
-        
+        return 0;
     }
 }
