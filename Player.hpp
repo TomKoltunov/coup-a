@@ -1,3 +1,14 @@
+/**
+ * @file Player.hpp
+ * @author Tom Koltunov (tomkoltunov@gmail.com)
+ * @brief Headers file for 'Player' objects
+ * @version 0.1
+ * @date 2022-04-26
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 #include "Game.hpp"
 #include <iostream>
 #include <string>

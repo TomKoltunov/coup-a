@@ -1,3 +1,14 @@
+/**
+ * @file Captain.hpp
+ * @author Tom Koltunov (tomkoltunov@gmail.com)
+ * @brief Headers file for 'Captain' objects
+ * @version 0.1
+ * @date 2022-04-26
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 #include "Player.hpp"
 #include <iostream>
 #include <string>
@@ -9,9 +20,6 @@ namespace coup
 {
     class Captain : public Player
     {
-        private:
-            Player player;
-
         public:
             Captain(Game& game, string name);
             void steal(Player& player);
