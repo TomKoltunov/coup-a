@@ -22,6 +22,7 @@ namespace coup
     {
         public:
             Contessa(Game& game, string name);
+            string role();
             void block(Player& player);
     };
 }

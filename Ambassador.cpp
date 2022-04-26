@@ -24,12 +24,17 @@ namespace coup
 
     }
 
-    void transfer(Player& player1, Player& player2)
+    string Ambassador::role()
+    {
+        return this->_name;
+    }
+
+    void Ambassador::transfer(Player& player1, Player& player2)
     {
 
     }
 
-    void block(Player& player)
+    void Ambassador::block(Player& player)
     {
 
     }

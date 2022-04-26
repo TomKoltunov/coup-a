@@ -24,12 +24,17 @@ namespace coup
 
     }
 
-    void steal(Player& player)
+    string Captain::role()
+    {
+        return this->_name;
+    }
+
+    void Captain::steal(Player& player)
     {
 
     }
 
-    void block(Player& player)
+    void Captain::block(Player& player)
     {
 
     }

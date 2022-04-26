@@ -24,12 +24,17 @@ namespace coup
         
     }
 
-    void tax()
+    string Duke::role()
+    {
+        return this->_name;
+    }
+
+    void Duke::tax()
     {
 
     }
 
-    void block(Player& player)
+    void Duke::block(Player& player)
     {
 
     }

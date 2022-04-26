@@ -9,6 +9,7 @@
  * 
  */
 
+#pragma once
 #include "Game.hpp"
 #include <iostream>
 #include <string>
@@ -31,7 +32,7 @@ namespace coup
             void income();
             void foreign_aid();
             void coup(Player& other);
-            string role(Player& player);
+            virtual string role();
             int coins();
     };
 } 

@@ -22,6 +22,7 @@ namespace coup
     {
         public:
             Ambassador(Game& game, string name);
+            string role();
             void transfer(Player& player1, Player& player2);
             void block(Player& player);
     };

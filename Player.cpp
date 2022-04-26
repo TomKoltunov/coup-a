@@ -17,33 +17,33 @@ using namespace std;
 
 namespace coup
 {
-    // Player::Player(Game& game, string name)
-    // {
-
-    // }
-
-    void income()
+    Player::Player(Game& game, string name)
     {
 
     }
 
-    void foreign_aid()
+    void Player::income()
     {
 
     }
 
-    void coup(Player& other)
+    void Player::foreign_aid()
     {
 
     }
 
-    string role(Player& player)
+    void Player::coup(Player& other)
     {
-        return " ";
+
     }
 
-    int coins()
+    string Player::role()
     {
-        return 0;
+        return this->_name;
+    }
+
+    int Player::coins()
+    {
+        return this->_money;
     }
 }

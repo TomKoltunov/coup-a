@@ -22,6 +22,7 @@ namespace coup
     {
         public:
             Captain(Game& game, string name);
+            string role();
             void steal(Player& player);
             void block(Player& player);
     };

@@ -23,4 +23,14 @@ namespace coup
     {
 
     }
+
+    void Assassin::coup(Player& other)
+    {
+
+    }
+
+    string Assassin::role()
+    {
+        return this->_name;
+    }
 } 

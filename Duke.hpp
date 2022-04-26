@@ -22,6 +22,7 @@ namespace coup
     {
         public:
             Duke(Game& game, string name);
+            string role();
             void tax();
             void block(Player& player);
     };

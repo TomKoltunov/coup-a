@@ -24,7 +24,12 @@ namespace coup
 
     }
 
-    void block(Player& player)
+    string Contessa::role()
+    {
+        return this->_name;
+    }
+
+    void Contessa::block(Player& player)
     {
 
     }

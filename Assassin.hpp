@@ -22,5 +22,7 @@ namespace coup
     {
         public:
             Assassin(Game& game, string name);
+            void coup(Player& other);
+            string role();
     };
 }
