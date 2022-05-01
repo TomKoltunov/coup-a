@@ -27,7 +27,7 @@ namespace coup
     This way each 'Captain' instance has all the 'Player' methods and since all 'Player's attributes are 'protected' access level 
     (and as said 'Captain' inherites from 'Player') - each 'Captain' instance have also this attributes.
     */
-    Captain::Captain(Game& game, string name) : Player(game, move(name)) 
+    Captain::Captain(Game& game, const string& name) : Player(game, name)
     {
 
     }

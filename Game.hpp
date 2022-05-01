@@ -3,7 +3,7 @@
  * @author Tom Koltunov (tomkoltunov@gmail.com)
  * @brief Headers file for 'Game' objects
  * @version 0.1
- * @date 2022-04-26
+ * @date 2022-04-27
  * 
  * @copyright Copyright (c) 2022
  * 
@@ -20,7 +20,7 @@ class Game
 {
     public:
         Game();
-        string turn();
-        vector<string> players();
-        string winner();
+        static string turn();
+        static vector<string> players();
+        static string winner();
 };

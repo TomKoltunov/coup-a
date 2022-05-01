@@ -27,7 +27,7 @@ namespace coup
     This way each 'Duke' instance has all the 'Player' methods and since all 'Player's attributes are 'protected' access level 
     (and as said 'Duke' inherites from 'Player') - each 'Duke' instance have also this attributes.
     */
-    Duke::Duke(Game& game, string name) : Player(game, move(name)) 
+    Duke::Duke(Game& game, const string& name) : Player(game, name)
     {
         
     }

@@ -27,7 +27,7 @@ namespace coup
     This way each 'Contessa' instance has all the 'Player' methods and since all 'Player's attributes are 'protected' access level 
     (and as said 'Contessa' inherites from 'Player') - each 'Contessa' instance have also this attributes.
     */
-    Contessa::Contessa(Game& game, string name) : Player(game, move(name)) 
+    Contessa::Contessa(Game& game, const string& name) : Player(game, name)
     {
 
     }

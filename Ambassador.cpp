@@ -27,7 +27,7 @@ namespace coup
     This way each 'Ambassador' instance has all the 'Player' methods and since all 'Player's attributes are 'protected' access level 
     (and as said 'Ambassador' inherites from 'Player') - each 'Ambassador' instance have also this attributes.
     */
-    Ambassador::Ambassador(Game& game, string name) : Player(game, move(name)) 
+    Ambassador::Ambassador(Game& game, const string& name) : Player(game, name) 
     {
 
     }

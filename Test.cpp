@@ -33,48 +33,9 @@ TEST_CASE("")
 	    Captain captain{game_1, "Reut"};
 	    Contessa contessa{game_1, "Gilad"};
 
-        if (game_1.turn() == "Moshe")
+        for (int i = 1; i <= 20; i++)
         {
-            CHECK_NOTHROW(duke.tax());
-            CHECK(duke.coins() == 3);
-            CHECK_THROWS(duke.income());
-
-        }
-        else if (game_1.turn() == "Yossi")
-        {
-            CHECK_NOTHROW(duke.tax());
-            CHECK(duke.coins() == 3);
-            assassin.foreign_aid();
-            CHECK(assassin.coins() == 2);
-            CHECK_NOTHROW(duke.block(assassin));
-            CHECK(assassin.coins() == 0);
-        }
-        else if (game_1.turn() == "Meirav")
-        {
-            CHECK_NOTHROW(duke.tax());
-            CHECK(duke.coins() == 3);
-            ambassador.foreign_aid();
-            CHECK(ambassador.coins() == 2);
-            CHECK_NOTHROW(duke.block(ambassador));
-            CHECK(ambassador.coins() == 0);
-        }
-        else if (game_1.turn() == "Reut")
-        {
-            CHECK_NOTHROW(duke.tax());
-            CHECK(duke.coins() == 3);
-            captain.foreign_aid();
-            CHECK(captain.coins() == 2);
-            CHECK_NOTHROW(duke.block(captain));
-            CHECK(captain.coins() == 0);
-        }
-        else if (game_1.turn() == "Gilad")
-        {
-            CHECK_NOTHROW(duke.tax());
-            CHECK(duke.coins() == 3);
-            contessa.foreign_aid();
-            CHECK(contessa.coins() == 2);
-            CHECK_NOTHROW(duke.block(contessa));
-            CHECK(contessa.coins() == 0);
+            CHECK_NOTHROW(captain.income());
         }
     }
 }

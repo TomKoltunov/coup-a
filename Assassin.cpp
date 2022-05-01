@@ -27,7 +27,7 @@ namespace coup
     This way each 'Assassin' instance has all the 'Player' methods and since all 'Player's attributes are 'protected' access level 
     (and as said 'Assassin' inherites from 'Player') - each 'Assassin' instance have also this attributes.
     */
-    Assassin::Assassin(Game& game, string name) : Player(game, move(name)) 
+    Assassin::Assassin(Game& game, const string& name) : Player(game, name) 
     {
 
     }
